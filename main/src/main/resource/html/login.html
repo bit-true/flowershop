@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/join.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/join.css">
+
+</head>
+<body>
+<form>
+    <label>
+        <p class="label-txt">아이디</p>
+        <input type="email" class="input" placeholder="아이디 입력">
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+    </label>
+    <label>
+        <p class="label-txt">비밀번호</p>
+        <input type="password" class="input" placeholder="비밀번호 입력">
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+    </label>
+    <button type="submit" id="button-check">회원가입</button>
+    <button type="submit">로그인</button>
+</form>
+
+<script>
+    function inputPhoneNumber(obj) {
+        var number = obj.value.replace(/[^0-9]/g, "");
+        var phone = "";
+
+        if(number.length < 4) {
+            return number;
+        } else if(number.length < 7) {
+            phone += number.substr(0, 3);
+            phone += "-";
+            phone += number.substr(3);
+        } else if(number.length < 11) {
+            phone += number.substr(0, 3);
+            phone += "-";
+            phone += number.substr(3, 3);
+            phone += "-";
+            phone += number.substr(6);
+        } else {
+            phone += number.substr(0, 3);
+            phone += "-";
+            phone += number.substr(3, 4);
+            phone += "-";
+            phone += number.substr(7);
+        }
+        obj.value = phone;
+    }
+</script>
+</body>
+</html>
+
