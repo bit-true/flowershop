@@ -4,7 +4,7 @@ body {
 }
 form {
     width: 60%;
-    max-width: 650px;
+    max-width: 500px;
     margin: 60px auto;
     background: #FBF9F7;
     padding: 60px 120px 80px 120px;
@@ -89,6 +89,11 @@ button {
     border-radius: 3px;
     cursor: pointer;
     transition: ease .3s;
+}
+
+#button-check:hover{
+    background: #7F4E92;
+    color: #ffffff;
 }
 
 button:hover {
