@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>상품 목록</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="../css/productList.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../js/productList.js">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <div class="input-group date" id="datetimepicker2" data-target-input="nearest"> <input type="text"
+              class="form-control datetimepicker-input" data-target="#datetimepicker2" value="01/15/2020">
+            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-4">필터</div>
+      <div class="col-md-2"></div>
+      <div class="col-md-2">
+        <select class="form-control input-sm">...</select>
+      </div>
+    </div>
+
+    <!--제품 목록 시작-->
+    <div class="product-list">
+      <div class="row">
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/01_thumb.jpg" alt="테디베어 해바라기" title="테디베어 해바라기">
+              <div class="sale">SALE</div>
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">테디베어 해바라기</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">22,000원</span>
+                  <span class="price">19,000원</span>
+                  <span class="piece">5대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="tag_season">시즌한정</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/02_thumb.jpg" alt="금꿩의 다리" title="금꿩의 다리">
+              <div class="sale">SALE</div>
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">금꿩의 다리</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">22,000원</span>
+                  <span class="price">19,000원</span>
+                  <span class="piece">5-7대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="tag_soldout">품절임박</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3"><a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/03_thumb.jpg" alt="에키놉스" title="에키놉스">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">에키놉스</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">20,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">5-6대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a></div>
+        <div class="col-md-3"><a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/04_thumb.jpg" alt="용담초" title="용담초">
+              <div class="sale">SALE</div>
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">용담초</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">22,000원</span>
+                  <span class="price">19,000원</span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="tag_soldout">품절임박</span>
+                </span>
+              </div>
+            </div>
+          </a></div>
+      </div>
+      <!-- 1 -->
+      <div class="row">
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/05_thumb.jpg" alt="레몬트리" title="레몬트리">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">레몬트리</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">13,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">8-10대 내외</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/06_thumb.jpg" alt="꼬리조팝나무" title="꼬리조팝나무">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">꼬리조팝나무</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">19,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">7-10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="tag_soldout">품절임박</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/07_thumb.jpg" alt="라벤더 스카비오사" title="라벤더 스카비오사">
+              <div class="sale">SALE</div>
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">라벤더 스카비오사</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">20,000원</span>
+                  <span class="price">15,000원</span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3"><a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/08_thumb.jpg" alt="오리엔탈 겹백합" title="오리엔탈 겹백합">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">오리엔탈 겹백합</span>
+                <span class="colors">흰색 분홍색</span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">28,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">5대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="tag_season">시즌한정</span>
+                </span>
+              </div>
+            </div>
+          </a></div>
+      </div>
+      <!-- 2 -->
+      <div class="row">
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/09_thumb.jpg" alt="드라이 라벤더" title="드라이 라벤더">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">드라이 라벤더</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">18,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">80-100대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/10_thumb.jpg" alt="안스리움 믹스" title="안스리움 믹스">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">안스리움 믹스</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">26,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">3종 이상</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="tag_soldout">품절임박</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/11_thumb.jpg" alt="백일홍 컬러믹스" title="백일홍 컬러믹스">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">백일홍 컬러믹스</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">15,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/12_thumb.jpg" alt="아가판서스" title="아가판서스">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">아가판서스</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">24,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">3대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                  <span class="tag_soldout">품절임박</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="row">
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/13_thumb.jpg" alt="글라디올러스 믹스" title="글라디올러스 믹스">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">글라디올러스 믹스</span>
+                <span class="colors">흰색 보라색</span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">18,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">2종</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3"><a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/14_thumb.jpg" alt="자나 장미" title="자나 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">자나 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">25,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a></div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/15_thumb.jpg" alt="빅토리아 장미" title="빅토리아 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">빅토리아 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">24,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/16_thumb.jpg" alt="거베라 믹스&화기 세트" title="거베라 믹스&화기 세트">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">거베라 믹스&화기 세트</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">17,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">가볍게</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="row">
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/17_thumb.jpg" alt="맨스필드파크 장미" title="맨스필드파크 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">맨스필드파크 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">17,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">5-10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/18_thumb.jpg" alt="코렐 내추럴 장미" title="코렐 내추럴 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">코렐 내추럴 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">24,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/19_thumb.jpg" alt="쉼머 장미" title="쉼머 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">쉼머 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">28,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3"><a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/20_thumb.jpg" alt="빅토리안 시크릿 장미" title="빅토리안 시크릿 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">빅토리안 시크릿 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">28,000원</span>
+                  <span class="price">26,000원</span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="row">
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/21_thumb.jpg" alt="클라란스 장미" title="클라란스 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">클라란스 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">21,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/22_thumb.jpg" alt="오렌지골드 장미" title="오렌지 골드 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">오렌지골드 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">26,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/23_thumb.jpg" alt="퀘스트 장미" title="퀘스트 장미">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">퀘스트 장미</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">22,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">10대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="item">
+            <div class="top">
+              <img class="product-image" src="../../../../../img/24_thumb.jpg" alt="잎설유" title="잎설유">
+            </div>
+            <div class="bottom">
+              <div class="row">
+                <span class="name">잎설유</span>
+                <span class="colors"></span>
+              </div>
+              <div class="row">
+                <span class="product-price">
+                  <span class="regular-price">19,000원</span>
+                  <span class="price"></span>
+                  <span class="piece">7-8대</span>
+                </span>
+              </div>
+              <div class="row">
+                <span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+</body>
+
+</html>

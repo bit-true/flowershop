@@ -1,0 +1,65 @@
+body {
+  color: #181717;
+  background-color: #C0D9B6;
+}
+.container {
+  background-color: #C0D9B6;
+  text-decoration: none;
+  text-align: center;
+
+}
+.item {
+  padding-bottom: 30px;
+}
+.product-list {
+  display: flex;
+  flex-flow: wrap;
+}
+.product-list .item {
+  text-decoration: none;
+}
+.product-image {
+  width: 75%;
+}
+/* 상품명, 가격 */
+.name {
+  color: #181717;
+  font-size: 18px;
+  font-weight: bold;
+}
+.product-price {
+  color: #181717;
+}
+.regular-price {
+  font-weight: bold;
+}
+.price {
+  font-size: 12px;
+  color: #fff;
+}
+.piece::before{
+  
+}
+.piece {
+  font-size: 14px;
+}
+
+/* 태그 */
+div.sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: #7F4E92;
+  padding: 3px 6px;
+}
+span.tag_season {
+  color: white;
+  background-color: #C0D9B6;
+  padding: 3px 6px;
+}
+span.tag_soldout {
+  color: white;
+  background-color: #62924E;
+  padding: 3px 6px;
+}
