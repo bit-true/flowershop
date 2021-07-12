@@ -1,0 +1,18 @@
+.product-filter {
+  display: flex;
+  flex-flow: row;
+}
+.product-list {
+  display: flex;
+  flex-flow: wrap;
+}
+.product-list .item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 275px;
+  height: 470px;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
