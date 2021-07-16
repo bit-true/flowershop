@@ -3,8 +3,6 @@
   text-decoration: none;
   text-align: center;
   -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 .item {
   
@@ -56,13 +54,18 @@
   color: #aaa;
 }
 .piece::before{
-  
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  width: 1px;
+  height: 9px;
+  background: #d4d4d4;
 }
 .piece {
   font-size: 14px;
 }
-/* 태그 */
 
+/* 태그 */
 span.tag_sale {
   color: white;
   background-color: #7F4E92;
