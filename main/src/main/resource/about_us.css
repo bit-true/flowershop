@@ -1,0 +1,50 @@
+/*ABOUT_US*/
+.honest-index__explain{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.honest-index__explain img{
+    width:350px;
+    height:auto;
+    margin-right:51px
+}
+.honest-index__explain .content .title{
+    text-align:left;
+    font-size:36px;
+    margin-bottom:26px
+}
+.honest-index__explain .content .body{font-size:14px;line-height:21px;margin-bottom:29px;text-align:left
+}
+.honest-index__explain__mobile .content{
+    margin-bottom:16px
+}
+.honest-index__explain__mobile .content .title-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between
+}
+.honest-index__explain__mobile .content .title-container .title{
+    font-size:37px;font-weight:500
+}
+.honest-index__explain__mobile .content .body{
+    font-weight:300;
+    font-size:21.5px;
+    line-height:1.5;
+    text-align:left
+}
+.honest-index__explain__mobile img{
+    width:100%;
+    height:314px;
+    object-fit:cover
+}
+.honest-index__explain__mobile a{
+    text-decoration:none;
+    color:#055124;
+    font-weight:700;
+    cursor:pointer;
+    font-size:18.5px
+}
+/*end About_us*/
