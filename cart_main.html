@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>장바구니 메인 페이지</title>
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+        <!-- 부트스트랩 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="cart_content.css">
+        <link rel="stylesheet" type="text/css" href="common.css">
+    </head>
+    <body>
+        <div>
+            <div class="container"><!--부트스트랩-->
+                <div class="row">
+                    <section class="section">
+                        <div class="has-text-centered">
+                                <h3>장바구니</h3>
+                        </div>
+                    </section>
+                    </div>   
+                    <div class="row">
+                        <section class="section">
+                            <div class="checkout_step">
+                                <div class="left">장바구니</div>
+                                <div class="center">주문결제</div>
+                                <div class="right">주문완료</div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="section">
+                            <div class="checkout__cart">
+                                <div class="order-name">
+                                    <span>일반구매 상품</span>
+                                </div>
+                            </div>
+                            <table class="table item border-top">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="field">
+                                                <div class="field__checkbox">
+                                                    <span class="label"></span>
+                                                    <input readonly id="all" type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th></th>
+                                        <th>상품정보</th>
+                                        <th>상품금액</th>
+                                        <th>할인금액</th>
+                                        <th>배송비</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table class="table item">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="field">
+                                                <div class="field__checkbox">
+                                                    <span class="label"></span>
+                                                    <input readonly id="1123412425" type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <img class="image" src="../1조 플라워샵/img/에키놉스썸네일1-min.jpg" 
+                                                alt="에키놉스" style="width: 100px;">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <span id="flower-name">에키놉스</span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="name">가격:</span>
+                                                <span class="value">20,000원 / 5-6대</span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="name">수량:</span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="name">수령예상일:</span>
+                                                <span class="value">2021-07-10</span>
+                                            </div>
+                                        </td>
+                                        <td>20,000원</td>
+                                        <td>-</td>
+                                        <td>3,000원</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table class="table subtotal">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="name">상품 금액:</span>
+                                            <span class="value">20,000원</span>
+                                        </td>
+                                        <td>
+                                            <i class="icon icon-cart-minus"></i>
+                                        </td>
+                                        <td>
+                                            <span class="name">할인 금액:</span>
+                                            <span class="value">-</span>
+                                        </td>
+                                        <td>
+                                            <i class="icon icon-cart-plus"></i>
+                                        </td>
+                                        <td>
+                                            <span class="name">배송비:</span>
+                                            <span class="value">3,000원</span>
+                                        </td>
+                                        <td>
+                                            <i class="icon icon-cart-equal"></i>
+                                        </td>
+                                        <td>
+                                            <span class="name">결제 금액:</span>
+                                            <span class="value">23,000원</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="select-btn-lg">
+                                <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-remove" area-hidden="true">선택삭제</span>
+                                </button>
+                            </div>
+                            <table class="table total">
+                                <tbody>
+                                    <tr>
+                                        <td style="font-weight: 500;">결제정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="box">
+                                                <div class="row">
+                                                    <span class="name">상품 금액:</span>
+                                                    <span class="value">20,000원</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="name">할인 금액:</span>
+                                                    <span class="value">-</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="name">배송비:</span>
+                                                    <span class="value">3,000원</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="box">
+                                                <div class="row total-cost">
+                                                    <span class="name">총 결제 금액:</span>
+                                                    <span class="value">23,000원</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bottom m-t-xl">
+                                <button class="button btn--medium" >쇼핑계속하기</button>
+                                <button class="button btn--medium">결제하기</button>
+                            </div>
+                        </section>
+                        <section class="section">
+                            <div class="row">
+                                <div class="col-xs-10 col-xs-offset-1 bg-warning col-sm-8 col-sm-offset-2
+                                img-rounded" id = "notice">
+                                    <div class="subject">
+                                        <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                                        &nbsp;배송비 부과 안내
+                                    </div>
+                                    <hr class="divider"></hr>
+                                    <ul class="text-left" >
+                                        <li>소품류는 본사에서 일괄 발송되기에 꽃과 별도로 도착하며, 배송비는 수량과 관계없이 한 번만 부과됩니다.</li>
+                                        <li>상품과 식물 화분, 일부 부피가 큰 생화의 경우 합배송이 어려워 분리된 박스에 각각 배송됩니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!--아래 섹션은 푸터 사이의 공간을 만들기 위한 공백-->
+                        <section class="section">
+                            <div>&nbsp;</div>
+                        </section>
+                    </div>
+                
+            </div>
+
+        </div><!--전체묶는 태그-->
+
+
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </body>
+</html>

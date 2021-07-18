@@ -1,0 +1,257 @@
+.section{
+    margin: 40px 0 ;
+}
+.text-centered{
+    text-align: center;
+}
+h3{
+    font-weight: 600;
+    margin: 0;
+    
+}
+.has-text-centered{
+   text-align: center !important; 
+}
+/*상단 진행 표시 step*/
+.checkout_step{
+    width: 100%;
+    font-size: 18px;
+}
+.left{
+    float: left;
+    width: 25%;
+    text-align: left;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #055124;
+}
+.center{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #d1d1d1;
+}
+.right{
+    float: right;
+    width: 25%;
+    text-align: right;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #d1d1d1;
+}
+/*일반구매 상품 헤더*/
+.order-name{
+    display: flex;
+    color: #055124;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.field{
+    margin-bottom: .75em;
+}
+
+.item table tr{
+    text-align: left;
+    vertical-align: middle !important;
+    border-top: none;
+    /* font-weight: 500; */
+}
+table{
+    width: 100%;
+    border: 1px solid #acacac;
+    border-collapse: collapse;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+}
+.border-top{
+    border-top: 1px solid #acacac !important;
+}
+.item th:first-child{
+    width: 5%;
+    
+    
+}
+.item th:nth-child(2){
+    width: 25%;
+    text-align: right;
+    padding-right: 16px;
+}
+.item th:nth-child(3){
+    width: 25%;
+    text-align: left;
+    padding-right: 16px;
+}
+.item th:nth-child(4),.item th:nth-child(5),.item th:nth-child(6){
+    width: 15%;
+    
+}
+
+.item td:first-child{
+    width: 5%;
+    
+    
+    
+}
+.item td:nth-child(2){
+    width: 25%;
+    text-align: right;
+    padding-right: 16px;
+}
+.item td:nth-child(3){
+    width: 25%;
+    text-align: left;
+    padding-right: 16px;
+}
+.item td:nth-child(4),.item td:nth-child(5),.item td:nth-child(6){
+    width: 15%;
+    
+}
+/*에키놉스 상품정보 */
+.item td .row:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+   
+}
+#flower-name{
+    background-color: #C0D9B6;
+    
+}
+.item td .row:nth-child(3){
+    text-align: left;
+    
+}
+.item td .row{
+    margin-left: 0 !important;
+}
+table.subtotal .name {
+    font-weight: 600;
+    margin-right: 5px;
+}
+/* table:not(:first-child) {
+    border-top: none !important;
+} */
+.checkout__cart table.border-top {
+    border-top: 1px solid #acacac!important;
+}
+/*차트 아이콘*/
+.icon-cart-minus{
+    background-image: url(img/cart_minus.png);
+    
+}
+.icon-cart-plus{
+    background-image: url(img/cart_plus.png);
+}
+.icon-cart-equal{
+    background-image: url(img/cart_equal.png);
+}
+.icon-cart-minus, .icon-cart-plus, .icon-cart-equal{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    width: 19px;
+    height: 19px;
+}
+table.subtotal td:first-child {
+    width: 17.5%;
+}
+table.subtotal td:nth-child(2) {
+    width: 10%;
+}
+table.subtotal td:nth-child(3) {
+    width: 17.5%;
+}
+table.subtotal td:nth-child(4) {
+    width: 10%;
+}
+table.subtotal td:nth-child(5) {
+    width: 17.5%;
+}
+table.subtotal td:nth-child(6) {
+    width: 10%;
+}
+table.subtotal td:nth-child(7) {
+    width: 17.5%;
+}
+/*선택 버튼*/
+.select-btn-lg{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+/*총결제 테이블*/
+table.total{
+    border: 1px solid #acacac;
+    border-collapse: collapse;
+}
+table.total td{
+    width: 100%;
+    padding: 10px 20px;
+}
+.total .box{
+    width: 300px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+table.total .name{
+    font-weight: 600 !important;
+    margin-right: 10px;
+   
+}
+table.total .value {
+    float: right;
+}
+.total-cost{
+    font-weight: 500;
+}
+/*bottom m-t-xl 하단 버튼2개*/
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.m-t-xl{
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
+.bottom button{
+    margin-right: 8px;
+}
+.btn--medium{
+    border: 1px solid #055124;
+    width: 220px;
+    height: 47px;
+    font-size: 14px;
+    color: #055124;
+    box-sizing: border-box;
+}
+.btn--medium:hover{
+    background-color: #055124 ;
+    color: white;
+}
+.button{
+    cursor: pointer;
+    background: none;
+
+}
+.bottom button:last-child {
+    margin-right: 0;
+}
+/*배송비 부과 안내*/
+
+/*알림칸 구분선*/
+#notice .divider{
+    margin: 10px 0;
+    height: 2px;
+    background-color:#acacac;
+    border: none;
+}
+/*알림칸 제목*/
+#notice .subject{
+    font-size: 16px;
+    padding-top: 12px;
+}
