@@ -1,0 +1,155 @@
+
+
+
+@media screen and (min-width: 1200px){
+.container{
+    max-width:1150px; }
+}
+
+.section{
+    margin: 40px 0 ;
+}
+.text-centered{
+    text-align: center;
+}
+
+.has-text-centered{
+   text-align: center !important; 
+}
+/*전체 타이틀 h3태그*/
+.sender-name h3, .shipping h3, .ttpay h3 {
+    font-weight: 500;
+    color: #055124;
+    margin: 0;
+}
+#main_h3{
+    font-weight: 600;
+    margin: 0;
+    
+}
+/*상단 진행 표시 step*/
+.container{
+    margin: 0 auto;
+    
+    
+}
+.checkout_step{
+    width: 100%;
+    font-size: 18px;
+}
+.left{
+    float: left;
+    width: 25%;
+    text-align: left;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #055124;
+}
+.center{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #055124;
+}
+.right{
+    float: right;
+    width: 25%;
+    text-align: right;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #d1d1d1;
+}
+/*구매자 정보*/
+.m-b-md{
+    margin-bottom: 3rem !important;
+}
+.field{
+    margin-bottom: .75em;
+}
+.cont--mid{
+    width: 384px !important;
+}
+
+.field__textinput{
+    display: inline-block;
+    height: 38px;
+    width: 100%;
+}
+.field__textinput input{
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 10px 0;
+    width: 100%;
+    text-align: inherit;
+    background-color: #e7e7e7fd;
+}
+/*선물하기 버튼*/
+.field__checkbox{
+    cursor: pointer;
+    display: inline-block;
+}
+
+/*수령인 정보*/
+.field-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/*f기본배송지 버튼*/
+.is-flex{
+    display: flex;
+}
+.m-b-lg{
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+/*결제금액*/
+.m-b-md{
+    margin-bottom: 1rem !important;
+}
+.checkout__total{
+    border: 1px solid #d1d1d1;
+}
+.m-t-lg{
+    margin-top: 2rem !important;
+}
+.checkout__total .top{
+    font-size: 16px;
+    padding: 20px 60px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.checkout__total .name{
+    float: left;
+}
+.checkout__total .value{
+    float: right;
+    font-weight: 300;
+}
+.checkout__total .bottom{
+    text-align: center;
+    height: 47px;
+    line-height: 47px;
+    font-weight: 600;
+    padding: 0 45px;
+}
+/*하단 결제하기*/
+.button{
+    cursor: pointer;
+    box-sizing: border-box;
+    background:none;
+}
+.button:hover{
+    background-color: #055124 ;
+    color: white;
+}
+.btn--full{
+    border: 1px solid #055124;
+    width: 100%;
+    height: 58px;
+    font-size: 16px;
+    color: #055124;
+}
+
+
